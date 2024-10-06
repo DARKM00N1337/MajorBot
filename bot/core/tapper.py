@@ -85,7 +85,7 @@ class Tapper:
                     logger.info(f"{self.session_name} | Sleep {fls}s")
                     await asyncio.sleep(fls + 3)
             
-            ref_id = settings.REF_ID if random.randint(0, 100) <= 85 else "339631649"
+            ref_id = settings.REF_ID
             
             web_view = await self.tg_client.invoke(messages.RequestAppWebView(
                 peer=peer,
